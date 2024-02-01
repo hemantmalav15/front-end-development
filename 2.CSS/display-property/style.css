@@ -1,0 +1,21 @@
+.container {
+  border: 2px solid red;
+  margin-bottom: 40px;
+}
+span {
+  border: 2px solid green;
+  /* padding: 20px; */
+  /* width: 50px; */
+  /* display: block; */
+  /* display: inline-block; */
+}
+#span1 {
+  /* visibility:hidden hides the element, but it still takes up space in the layout.
+     display:none removes the element from the document. It does not take up any space. */
+  /* display: none; */
+  /* visibility: hidden; */
+  display: block;
+  margin-bottom: 40px;
+  padding: 40px;
+  width: 100px;
+}
