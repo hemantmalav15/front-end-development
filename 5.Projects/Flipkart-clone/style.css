@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #dddddd;
+    font-family: 'Roboto', sans-serif;
+}
+ul{
+    list-style: none;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    background-color: white;
+    margin: 8px 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 2px solid rgba(211, 211, 211, 0.619);
+    width: 200px;
+    height: 300px;
+    align-items: center;
+    transition: all 0.1s ease-out;
+    text-align: center;
+}
+.card img{
+    width:100%;
+    margin: 0 auto;
+}
+.card:hover{
+    scale: 1.01;
+    box-shadow: 0 0 8px black;
+}
+/* Header */
+header{
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px;
+}
+.nav-items{
+    gap: 20px;
+}
+.nav-items li{
+    color: #212121;
+}
+.search-input{
+    gap: 20px;
+    border-radius: 10px;
+    background-color: #F0F5FF;
+}
+.search-icon{
+    padding-left: 20px;
+}
+input{
+    width: 40vw;
+    padding: 10px;
+    border: none;
+    background-color: #F0F5FF;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+input:focus{
+    outline: none;
+}
+
+/* Products Categories */
+.product-category-container{
+    margin: 8px 10px;
+    background-color: white;
+    justify-content: space-evenly;
+    min-height: 126px;
+}
+.category{
+    flex-direction: column;
+}
+.category > a:hover{
+    color: lightslategray;
+}
+.category img{
+    height: 60px;
+}
+h4{
+    font-weight: 300;
+}
+
+/* Top deals container */
+.top-deals-container{
+    padding: 30px 0;
+}
+.top-deals-container > h3{
+    padding-left: 20px;
+}
+/* Card */
+a.flex > img{
+    height: 160px;
+}
+a.flex{
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+/* Offer cards container */
+.offer-cards-container{
+    background-color: white;
+    margin: 8px 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 10px 0;
+    padding-left: 10px;
+}
+.offer-card img{
+    width: calc(100% - 10px);
+}
+
+/* grocery offers */
+.grocery-offers{
+    background-color: white;
+    margin: 0 10px;
+}
+.grocery-offer > img{
+    width: 100%;
+}
+
+/* Suggested for you */
+.suggested > img{
+    height: 100%;
+    width: 100px;
+}
+.container.flex{
+    justify-content: space-evenly;
+}
+
+/* footer */
+footer{
+    padding: 50px;
+    background-color: #212121;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    /* flex-wrap: wrap; */
+}
+.left-footer{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.right-footer{
+    width: 40%;
+    display: flex;
+    justify-content: space-between;
+}
+.mail{
+   display: flex;
+   flex-direction: column;
+   width: 50%;
+}
+.registered-office {
+    width: 50%;
+}
+.left-footer{
+    display: flex;
+}
+.left-footer ul{
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+}
+li{
+    color: white;
+}
+footer li:hover{
+    text-decoration: underline;
+}
+footer .heading{
+    color: lightblue;
+    margin-bottom: 20px;
+}
+.vertical-line{
+    height: 30vh;
+    border-left: 1px solid gray;
+    margin-right: 50px;
+}
+.telephone{
+    color: rgb(59, 88, 161);
+}
