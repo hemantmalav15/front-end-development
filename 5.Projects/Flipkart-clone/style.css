@@ -56,6 +56,9 @@ header{
 .nav-items li{
     color: #212121;
 }
+.nav-list-item:hover{
+    cursor: pointer;
+}
 .search-input{
     gap: 20px;
     border-radius: 10px;
@@ -81,7 +84,7 @@ input:focus{
     margin: 8px 10px;
     background-color: white;
     justify-content: space-evenly;
-    min-height: 126px;
+    height: 126px;
 }
 .category{
     flex-direction: column;
@@ -105,7 +108,8 @@ h4{
 }
 /* Card */
 a.flex > img{
-    height: 160px;
+    height: 200px;
+    max-width: 150px;
 }
 a.flex{
     flex-direction: column;
@@ -196,4 +200,163 @@ footer .heading{
 }
 .telephone{
     color: rgb(59, 88, 161);
+}
+
+@media screen and (max-width:920px) {
+    
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+    }
+    /* Top deals */
+    .top-deals-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-deals-container h3{
+        text-align: center;
+    }
+    .card.flex:nth-child(7){
+        display: none;
+    }
+    /* Cards */
+    .card{
+        height: 350px;
+        width: 250px;
+    }
+    .card a{
+        height: 100%;
+    }
+    .card p{
+        font-size: 1.2rem;
+    }
+    .card h4{
+        font-size: 1.2rem;
+    }
+    a.flex > img{
+        height: 240px;
+        max-width: 200px;
+    }
+    /* offer cards */
+    .offer-cards-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8px;
+        overflow: hidden;
+    }
+    .offer-card:nth-child(9){
+        display: none;
+    }
+    /* Grocery offers */
+    .grocery-offers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .vertical-line{
+        display: none;
+    }
+    footer .right-footer{
+        margin-left: 20px;
+    }
+}
+
+/* tablet devices */
+@media screen and (max-width:768px) {
+    .container.flex{
+        gap: 30px;
+    }
+    .card{
+        height: 300px;
+        width: 200px;
+    }
+    .card p{
+        font-size: 1rem;
+    }
+    .card h4{
+        font-size: 1rem;
+    }
+    a.flex > img{
+        height: 200px;
+        max-width: 170px;
+    }
+    /* header */
+    header .search-input{
+        width: 300px;
+    }
+    .search-input input::placeholder{
+        content: "Search for Products";
+    }
+
+    /* product category container */
+    .product-category-container{
+        display: grid;
+        height: 100px;
+        grid-template-columns: repeat(7, 1fr);
+        grid-row: 1;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+    }
+}
+
+/* Mobile devices */
+@media screen and (max-width:375px) {
+    /* .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin: 0 auto;
+    } */
+    /* Top deals */
+    /* .top-deals-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .top-deals-container h3{
+        text-align: center;
+    }
+    .card.flex:nth-child(7){
+        display: none;
+    } */
+    /* Offer Cards */
+    /* .card{
+        height: 350px;
+        width: 250px;
+    }
+    .card a{
+        height: 100%;
+    }
+    .card p{
+        font-size: 1.2rem;
+    }
+    .card h4{
+        font-size: 1.2rem;
+    }
+    a.flex > img{
+        height: 240px;
+        max-width: 200px;
+    } */
+    /* offer cards */
+    .offer-cards-container{
+        width: 175vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding: 8px;
+    }
+    .offer-card:nth-child(9){
+        display: none;
+    }
+    /* Grocery offers */
+    .grocery-offers{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    footer .vertical-line{
+        display: none;
+    }
+    footer .right-footer{
+        margin-left: 20px;
+    }
 }
